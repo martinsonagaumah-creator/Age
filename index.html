@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="age.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="input-box">
+            <form action="" class="ageForm">
+            <div class="box">
+                <label for="day">DAY</label>
+                <input type="number" placeholder="DD" id="day" name="day">
+                <small id="dayError"></small>
+            </div>
+
+            <div class="box">
+                <label for="month">MONTH</label>
+                <input type="number" placeholder="MM" id="month" name="month">
+                <small id="monthError"></small>
+            </div>
+
+            <div class="box">
+                <label for="year">YEAR</label>
+                <input type="number" placeholder="YYYY" id="year" name="year">
+                <small id="yearError"></small>
+            </div>
+
+            <div>
+                <button type="submit">Submit</button>
+            </div> 
+
+            <hr>
+                
+            <div class="result">
+                <h1><span class="purple" id="years">--</span> years</h1>
+                <h1><span class="purple" id="months">--</span> months</h1>
+                <h1><span class="purple" id="days">--</span> days</h1>
+            </div>
+            </form>
+        </div>
+    </div>
+    <script src="age.js"></script>
+</body>
+</html>
